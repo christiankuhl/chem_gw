@@ -81,7 +81,7 @@ def update(screen, background, left, right, paused):
     left.blit()
     if paused:
         pause(screen)
-    font = pygame.font.SysFont('Comic Sans MS', 30)
+    font = pygame.font.SysFont('Arial', 30)
     left_text = font.render(str(left.concentration), True, (255, 255, 0))
     right_text = font.render(str(right.concentration), True, (255, 255, 0))
     left_speed = font.render(str(left.speed), True, (0, 255, 120))
@@ -175,5 +175,5 @@ def main():
                     update(screen, background, left, right, paused)
         pygame.display.update()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
